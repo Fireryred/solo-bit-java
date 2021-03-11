@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SEG32-DESPATT-GRUTA_GERSHOM-MP3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>DisplayProductServlet</servlet-name>
+    <servlet-class>controller.DisplayProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayProductServlet</servlet-name>
+    <url-pattern>/product.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <servlet-class>controller.SearchProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <url-pattern>/search.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RegisterProcessServlet</servlet-name>
+    <servlet-class>controller.RegisterProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterProcessServlet</servlet-name>
+    <url-pattern>/register.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LoginProcessServlet</servlet-name>
+    <servlet-class>controller.LoginProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginProcessServlet</servlet-name>
+    <url-pattern>/login.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LogoutProcessServlet</servlet-name>
+    <servlet-class>controller.LogoutProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutProcessServlet</servlet-name>
+    <url-pattern>/logout.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AddToCartProcessServlet</servlet-name>
+    <servlet-class>controller.AddToCartProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddToCartProcessServlet</servlet-name>
+    <url-pattern>/add-to-cart.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ViewCartProcess</servlet-name>
+    <servlet-class>controller.ViewCartProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewCartProcess</servlet-name>
+    <url-pattern>/view-cart.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>CheckoutProcessServlet</servlet-name>
+    <servlet-class>controller.CheckoutProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckoutProcessServlet</servlet-name>
+    <url-pattern>/checkout.action</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <servlet-name>ConfirmPaymentServlet</servlet-name>
+    <servlet-class>controller.ConfirmPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmPaymentServlet</servlet-name>
+    <url-pattern>/checkout-process.action</url-pattern>
+  </servlet-mapping>
+</web-app>
